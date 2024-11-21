@@ -1,6 +1,6 @@
 body {
     font-family: 'Varela Round', sans-serif;
-    line-height: 1.6;
+    line-height: 1.5; /*space out*/
     margin: 0;
     padding: 0;
     background-color: #fefbe0; 
@@ -14,21 +14,17 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-}
-
 .main-container {
-    display: flex; /* Use flexbox for horizontal alignment */
-    flex-direction: row; /* Ensure content is arranged in columns */
-    gap: 1rem; /* Add spacing between columns */
+    display: flex; 
+    flex-direction: row; 
+    gap: 1rem; 
     width: 90%;
     max-width: 1200px;
     margin: 2rem auto;
 }
 
 .info-column {
-    flex: 0 1 65%; /* 65% of the available width */
+    flex: 0 1 65%; 
     background: #faf9f0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -36,7 +32,7 @@ header h1 {
 }
 
 .cv-column {
-    flex: 0 1 35%; /* 35% of the available width */
+    flex: 0 1 35%; 
     background: #faf9f0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -63,7 +59,7 @@ a:hover {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     gap: 1rem;
     justify-items: center;
     align-items: center;
@@ -77,11 +73,6 @@ a:hover {
 .skill-item img {
     width: 60px;
     height: 60px;
-    object-fit: contain;
+    object-fit: contain; /* make the photos space out evenly */
     margin-bottom: 0.5rem;
-}
-
-.skill-item p {
-    font-size: 0.9rem;
-    color: #333;
 }
